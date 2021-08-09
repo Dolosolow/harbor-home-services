@@ -1,0 +1,1 @@
+export { ChakraNextImage } from "./ChakraNextImage";
