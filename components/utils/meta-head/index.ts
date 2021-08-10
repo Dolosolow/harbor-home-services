@@ -1,0 +1,1 @@
+export { MetaHead } from "./MetaHead";
