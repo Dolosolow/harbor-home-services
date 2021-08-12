@@ -4,6 +4,7 @@ import { LayoutWithPosters } from "@/components/common/layout";
 import type { HLProps } from "@/components/common/headline";
 import type { TBProps } from "@/components/common/text-block";
 import type { SCLProps } from "@/components/pages/services/CardList";
+import type { ILProps } from "@/components/pages/services/InlineList";
 
 import { content } from "@/lang/en-services";
 
@@ -12,6 +13,9 @@ const DynamicHeadline = dynamic<HLProps>(() =>
 );
 const DynamicCardList = dynamic<SCLProps>(() =>
   import("../../components/pages/services/CardList").then((mod) => mod.CardList)
+);
+const DynamicInlineList = dynamic<ILProps>(() =>
+  import("../../components/pages/services/InlineList").then((mod) => mod.InlineList)
 );
 const DynamicTextBlock = dynamic<TBProps>(() =>
   import("../../components/common/text-block").then((mod) => mod.TextBlock)
@@ -32,6 +36,7 @@ const Services = () => {
       />
       <DynamicTextBlock text={description} styles={{ mt: [12, null, 12] }} />
       <DynamicCardList datas={cards} />
+      <DynamicInlineList text="We Also Do" items={otherServices} />
     </div>
   );
 };
