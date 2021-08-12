@@ -1,1 +1,9 @@
 export { CheckIcon } from "./CheckIcon";
+export { ElectricIcon } from "./ElectricIcon";
+export { HandShakeIcon } from "./HandShakeIcon";
+export { HomeRepairIcon } from "./HomeRepairIcon";
+export { PuzzleIcon } from "./PuzzleIcon";
+export { Rollerbrush } from "./RollerbrushIcon";
+export { ShieldIcon } from "./ShieldIcon";
+export { ToolboxIcon } from "./ToolboxIcon";
+export { UserTieIcon } from "./UserTieIcon";
