@@ -6,6 +6,7 @@ import type { FormikProps } from "formik";
 import { FormSubmitted } from "@/components/pages/contact/FormSubmitted";
 import { Header } from "@/components/pages/contact/Header";
 import { AccountInfoFields } from "./forms/AccountInfoFields";
+import { CheckboxContainer } from "./forms/CheckboxContainer";
 
 import { inquirySchema as validationSchema } from "@/utils/validation-schemas";
 import type { FormValues } from "../../../global";
@@ -46,6 +47,15 @@ const ContactFormContainer = (props: FormikProps<FormValues> & CFCProps) => {
             onBlur={props.handleBlur}
             onChange={props.handleChange}
             setFieldValue={props.setFieldValue}
+          />
+          <CheckboxContainer
+            withInputField
+            items={props.services}
+            isInvalid={(errors.selectedServices && touched.selectedServices) as boolean}
+            label="Select below any service that best applies to your project(s)."
+            onCheckboxChange={(selectedItems) => {
+              selectedItems.length && props.setFieldValue("selectedServices", selectedItems);
+            }}
           />
         </VStack>
         <Flex w="100%" justify="flex-end" mt={16}>
