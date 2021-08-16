@@ -7,6 +7,7 @@ import { FormSubmitted } from "@/components/pages/contact/FormSubmitted";
 import { Header } from "@/components/pages/contact/Header";
 import { AccountInfoFields } from "./forms/AccountInfoFields";
 import { CheckboxContainer } from "./forms/CheckboxContainer";
+import { DetailTextarea } from "./forms/DetailTextarea";
 import { FileDropZone } from "./forms/FileDropZone";
 
 import { inquirySchema as validationSchema } from "@/utils/validation-schemas";
@@ -59,6 +60,13 @@ const ContactFormContainer = (props: FormikProps<FormValues> & CFCProps) => {
             }}
           />
           <FileDropZone setFieldValue={props.setFieldValue} />
+          <DetailTextarea
+            label="What type of help are you looking for? You can read more about our services here."
+            id="project_description"
+            isInvalid={(errors.project_description && touched.project_description) as boolean}
+            value={values.project_description}
+            onChange={props.handleChange}
+          />
         </VStack>
         <Flex w="100%" justify="flex-end" mt={16}>
           <Button
