@@ -7,6 +7,7 @@ import { FormSubmitted } from "@/components/pages/contact/FormSubmitted";
 import { Header } from "@/components/pages/contact/Header";
 import { AccountInfoFields } from "./forms/AccountInfoFields";
 import { CheckboxContainer } from "./forms/CheckboxContainer";
+import { FileDropZone } from "./forms/FileDropZone";
 
 import { inquirySchema as validationSchema } from "@/utils/validation-schemas";
 import type { FormValues } from "../../../global";
@@ -57,6 +58,7 @@ const ContactFormContainer = (props: FormikProps<FormValues> & CFCProps) => {
               selectedItems.length && props.setFieldValue("selectedServices", selectedItems);
             }}
           />
+          <FileDropZone setFieldValue={props.setFieldValue} />
         </VStack>
         <Flex w="100%" justify="flex-end" mt={16}>
           <Button
