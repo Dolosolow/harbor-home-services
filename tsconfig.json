@@ -19,6 +19,7 @@
       "@/components/common/*": ["components/common/*"],
       "@/components/pages/*": ["components/pages/*"],
       "@/components/utils/*": ["components/utils/*"],
+      "@/services/*": ["services/*"],
       "@/hooks/*": ["hooks/*"],
       "@/lang/*": ["lang/*"],
       "@/utils/*": ["utils/*"]
