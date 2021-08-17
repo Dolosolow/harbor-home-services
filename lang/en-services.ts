@@ -59,7 +59,7 @@ export const content: ServicesContent = {
     "Garden sheds",
     "Gazebos",
     "Ceiling & roofing",
-    "Loft conversion",
+    "Windows",
     "Gates and fences",
   ],
 };
