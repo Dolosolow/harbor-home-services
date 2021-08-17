@@ -15,8 +15,19 @@ ApiRoute.get((req, res) => {
 ApiRoute.post(async (req, res) => {
   console.log("email api request received\n");
   const sgMail = new SGMailProvider();
+  let attachments: Array<any> = [];
 
   const formValues = req.body.formValues;
+  const formFiles = req.files;
+
+  attachments = formFiles.map((file) => {
+    return {
+      content: file.buffer.toString("base64"),
+      filename: file.originalname,
+      type: "image/jpeg",
+      diposition: "attachment",
+    };
+  });
 
   try {
     const validatedData = await inquirySchema.validate(formValues, { abortEarly: false });
@@ -32,6 +43,7 @@ ApiRoute.post(async (req, res) => {
       to: newInquiry.email,
       templateId: process.env.SENDGRID_EMAIL_TEMPLATE_ID as string,
       dynamicTemplateData: newInquiry,
+      attachments,
     });
 
     return res.status(200).send(`email has successfully been sent`);
