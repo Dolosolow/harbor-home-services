@@ -45,7 +45,7 @@ export const CheckboxTags = (props: CBProps) => {
             whiteSpace="nowrap"
             maxW="min-content"
             py={2}
-            px={4}
+            px={2}
             mt={2}
             mx={0.5}
             cursor="pointer"

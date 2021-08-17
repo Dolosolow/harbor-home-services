@@ -10,7 +10,7 @@ export const CheckboxContainer = (props: CBProps) => {
   return (
     <Flex w="100%" flexDir="column">
       <Flex w="100%" flexDir="column">
-        <FormLabel htmlFor="name" fontSize={12} fontWeight={400} color="blackAlpha.600" mb={2.5}>
+        <FormLabel htmlFor="name" fontSize={12} fontWeight={400} color="blackAlpha.600" pb={2}>
           {props.label}
         </FormLabel>
         <CheckboxTags

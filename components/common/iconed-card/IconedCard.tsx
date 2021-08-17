@@ -12,8 +12,8 @@ export const IconedCard = ({ title, content, IconComponent, height, navLink = nu
         {content}
       </Text>
     ) : (
-      content.split(":").map((chunkContent) => (
-        <Text pl={10} fontSize={15} lineHeight={1} w="92%">
+      content.split(":").map((chunkContent, idx) => (
+        <Text key={idx} pl={10} fontSize={15} lineHeight={1} w="92%">
           {chunkContent}
         </Text>
       ))

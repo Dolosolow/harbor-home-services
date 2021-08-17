@@ -19,8 +19,8 @@ export const Poster = ({ btnText = "Submit", withButton = true, ...props }: PPro
       <ImageBackground
         src={props.imgsrc}
         containerProps={{
-          w: ["95%", null, "95%", "85%"],
-          h: ["450px", null, "380px"],
+          w: ["95%", null, null, "85%"],
+          h: "350px",
           borderRadius: 15,
           overflow: "hidden",
         }}
@@ -35,14 +35,14 @@ export const Poster = ({ btnText = "Submit", withButton = true, ...props }: PPro
         >
           <Text
             color="#fafafa"
-            fontSize={[28, null, 32, 40]}
+            fontSize={[28, null, 32]}
             fontWeight="bold"
             letterSpacing={-1}
-            w={["95%", null, "600px", "60%"]}
+            w={["320px", null, "450px"]}
           >
             {props.headText}
           </Text>
-          <Text fontSize={[15, null, 16]} color="pGray" w={["95%", null, null, null, "50%"]}>
+          <Text fontSize={[14, null, 15]} color="pGray" w={"380px"}>
             {props.subText}
           </Text>
           <EmailForm btnText="submit" />

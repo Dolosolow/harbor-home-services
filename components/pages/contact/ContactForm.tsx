@@ -47,7 +47,7 @@ const ContactFormContainer = (props: FormikProps<FormValues> & CFCProps) => {
   }, [props.isSubmitting]);
 
   const renderForm = () => (
-    <Flex flexDir="column" w={["90%", null, null, "80%"]} maxW="650px" h="100%">
+    <Flex flexDir="column" w={["90%", null, null, null, "85%"]} maxW="650px" h="100%">
       <Header />
       <form onSubmit={props.handleSubmit} onKeyDown={preventKeySubmit}>
         <VStack pt={6} spacing={5}>

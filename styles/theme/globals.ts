@@ -42,6 +42,7 @@ export const GlobalStyles = css`
 
   .container.container-home {
     padding-top: 0;
+    overflow: hidden;
 
     @media only screen and (max-width: ${breakpoints.xl}) {
       padding-top: 36px;

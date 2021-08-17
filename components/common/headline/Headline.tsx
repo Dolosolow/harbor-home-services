@@ -36,7 +36,7 @@ export const Headline = (props: HLProps) => {
             align="center"
           >
             <Text
-              fontSize={18}
+              fontSize={[16, null, 18]}
               fontWeight="bold"
               textTransform="uppercase"
               color={casualProps.title.color}
@@ -44,7 +44,7 @@ export const Headline = (props: HLProps) => {
             >
               {casualProps.descriptor}
             </Text>
-            <Text fontSize={[38, null, 45]} fontWeight="bold" letterSpacing={-2}>
+            <Text fontSize={[34, null, 45]} fontWeight="bold" letterSpacing={-2}>
               <>
                 <Text as="span" display="inline" color={casualProps.title.color || "#121212"}>
                   {casualProps.title.coloredText}
@@ -53,8 +53,9 @@ export const Headline = (props: HLProps) => {
               </>
             </Text>
             <Text
+              w={["90%", null, "80%"]}
               textAlign="center"
-              fontSize={[15, null, 18, null, 20]}
+              fontSize={[15, null, 16]}
               fontWeight={500}
               color="#4636369d"
             >

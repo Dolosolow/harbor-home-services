@@ -22,12 +22,7 @@ export const Header = ({
   content: { text, subText, imgSrc },
 }: HProps) => {
   return (
-    <Flex
-      w="100%"
-      h={["100%", null, null, null, "95vh"]}
-      flexDir={["column", null, null, "row"]}
-      pt={[28, null, null, 20, 0]}
-    >
+    <Flex w="100%" h={"100%"} flexDir={["column", null, null, "row"]} pt={[28, null, null, 36]}>
       <Flex
         w={["100%", null, null, "49%"]}
         px={[4, null, null, null, 20]}

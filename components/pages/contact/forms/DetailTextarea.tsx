@@ -11,7 +11,7 @@ interface DTAProps {
 export const DetailTextarea = ({ isInvalid = false, ...props }: DTAProps) => {
   return (
     <FormControl isInvalid={isInvalid}>
-      <Text mb={2} fontSize={12} fontWeight={400} color="blackAlpha.600">
+      <Text pb={3} fontSize={12} fontWeight={400} color="blackAlpha.600">
         {props.label}
       </Text>
       <Textarea

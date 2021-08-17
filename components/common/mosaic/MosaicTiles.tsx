@@ -46,17 +46,14 @@ export const MosaicTiles = ({ images, gridContainerStyles }: MTProps) => {
   return (
     <Grid
       gridTemplateColumns={[
-        "repeat(auto-fit, minmax(65px, 1fr))",
-        "repeat(auto-fit, minmax(65px, 1fr))",
-        "repeat(auto-fit, minmax(140px, 1fr))",
-        "repeat(auto-fit, minmax(200px, 1fr))",
-        "repeat(auto-fit, minmax(240px, 1fr))",
+        "repeat(auto-fit, minmax(16%, 1fr))",
+        null,
+        "repeat(auto-fit, minmax(18%, 1fr))",
       ]}
-      gridAutoRows={["65px", "140px", "140px", "240px", "240px"]}
-      gap={[1, 1, 3, 3, 3]}
+      gridAutoRows={["65px", "140px", null, "200px"]}
+      gap={2}
       pos="relative"
       h="max-content"
-      minW={[0, null, "580px", "580px", "580px"]}
       w="100vw"
       {...gridContainerStyles}
     >

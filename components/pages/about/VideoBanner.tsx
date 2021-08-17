@@ -20,11 +20,14 @@ export const VideoBanner = ({ videosrc, videoContainer, ...props }: VBProps) => 
 };
 
 const defaultContainerProps: BoxProps = {
-  borderRadius: [20, null, 15],
+  borderTopRightRadius: 15,
+  borderBottomRightRadius: 15,
+  borderTopLeftRadius: [20, null, 0],
+  borderBottomLeftRadius: [20, null, 0],
   mt: [12, null, 12],
   mb: 10,
-  mr: [0, null, 10],
+  mr: ["unset", null, "auto"],
   overflow: "hidden",
   h: ["50%", "60vh", "400px"],
-  w: ["96%", null, "100%"],
+  w: ["96%", null, "90%"],
 };
