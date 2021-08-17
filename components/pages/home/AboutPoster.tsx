@@ -36,7 +36,7 @@ export const AboutPoster = ({ content }: APProps) => {
       renderRightSideComponent={
         <DynamicResponsiveImgSwap
           mobile={hideMobile}
-          mainImgSrc="https://res.cloudinary.com/dnrj5jpxf/image/upload/v1633499455/hhs-images/tools_u8f6ub.png"
+          mainImgSrc="https://res.cloudinary.com/dnrj5jpxf/image/upload/v1642174377/hhs-images/Untitled_Artwork_2_wmpsjc.png"
           carouselImgs={[
             "https://res.cloudinary.com/dnrj5jpxf/image/upload/v1633503020/hhs-images/blend-bathroom_qkyyqz.webp",
             "https://res.cloudinary.com/dnrj5jpxf/image/upload/v1633503001/hhs-images/blend-livingspace_b8rutd.webp",
@@ -59,8 +59,9 @@ export const AboutPoster = ({ content }: APProps) => {
         />
       }
       leftSideStyles={{
-        justifyContent: "center",
-        pl: [0, 0, 0, 24, 24],
+        justifyContent: "flex-start",
+        pl: [0, null, null, 6, 24],
+        pt: [0, null, null, 24],
         w: "100%",
         zIndex: 1,
       }}
@@ -68,7 +69,7 @@ export const AboutPoster = ({ content }: APProps) => {
       containerStyles={{
         mt: [null, null, 0],
         h: "100%",
-        py: [16, null, 20, 32],
+        py: [16, null, 20, 14],
       }}
     />
   );
