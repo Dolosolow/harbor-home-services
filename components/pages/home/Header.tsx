@@ -66,7 +66,13 @@ export const Header = ({
           borderRadius={["15px", null, "20px", "30px 0 0 30px"]}
           overflow="hidden"
         >
-          <ChakraNextImage priority src={imgSrc} objectFit="cover" w="100%" />
+          <ChakraNextImage
+            alt="header living room"
+            priority
+            src={imgSrc}
+            objectFit="cover"
+            w="100%"
+          />
         </Flex>
       </Flex>
     </Flex>

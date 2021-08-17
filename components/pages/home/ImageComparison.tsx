@@ -15,10 +15,10 @@ const DynamicMosaicTiles = dynamic<MTProps>(() =>
 );
 
 const images = [
-  "https://res.cloudinary.com/dnrj5jpxf/image/upload/v1633499446/hhs-images/backyard_lbszvb.jpg",
+  "https://res.cloudinary.com/dnrj5jpxf/image/upload/v1633499446/hhs-images/backyard_lbszvb.jpg**",
   "https://res.cloudinary.com/dnrj5jpxf/image/upload/v1633499446/hhs-images/livingspace_oixmb2.jpg",
-  "https://res.cloudinary.com/dnrj5jpxf/image/upload/v1633499582/hhs-images/modern-backyard_y6ztwo.jpg",
-  "https://res.cloudinary.com/dnrj5jpxf/image/upload/v1633499445/hhs-images/backyard-2_edwirh.jpg",
+  "https://res.cloudinary.com/dnrj5jpxf/image/upload/v1633499582/hhs-images/modern-backyard_y6ztwo.jpg**",
+  "https://res.cloudinary.com/dnrj5jpxf/image/upload/v1633499445/hhs-images/backyard-2_edwirh.jpg**",
   "https://res.cloudinary.com/dnrj5jpxf/image/upload/v1633499446/hhs-images/livingspace-2_gqd1sz.jpg",
 ];
 

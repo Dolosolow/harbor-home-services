@@ -45,6 +45,7 @@ export const ImageBackground = ({
       {withOverlay && <Box w="100%" h="100%" bgColor="#060e1f7a" pos="absolute" zIndex={1} />}
       <ChakraNextImage
         src={props.src}
+        alt={props.alt}
         h={imageProps?.h || imageProps?.height || "100%"}
         w={imageProps?.w || imageProps?.width || "100%"}
         objectFit="cover"

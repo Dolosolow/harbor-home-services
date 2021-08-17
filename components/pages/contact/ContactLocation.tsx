@@ -46,6 +46,7 @@ export const ContactLocation = () => {
       </Flex>
       <ChakraNextImage
         priority
+        alt="custom street map"
         src="https://res.cloudinary.com/dnrj5jpxf/image/upload/v1641681152/hhs-images/loc_yeshte.png"
         h="100%"
         w="100%"

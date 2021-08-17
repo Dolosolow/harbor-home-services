@@ -1,10 +1,19 @@
 import { Text } from "@chakra-ui/react";
+import NextLink from "next/link";
 
 import { LogoIcon } from "@/components/icons/LogoIcon";
 
 export const Header = () => (
   <>
-    <LogoIcon boxSize={24} color="blackAlpha.900" display={["none", null, null, "block"]} />
+    <NextLink href="/">
+      <LogoIcon
+        boxSize={24}
+        color="blackAlpha.900"
+        display={["none", null, null, "block"]}
+        cursor="pointer"
+        zIndex={100}
+      />
+    </NextLink>
     <Text mt={8} fontWeight={700} fontSize={[26, null, 32]}>
       Tell us about your project.
     </Text>

@@ -27,7 +27,7 @@ export const MosaicItem = ({ layoutId, src, onItemClick, togglePresence = false 
       onClick={onItemClick}
       {...(togglePresence && (selectedElementProps as any))}
     >
-      <ChakraNextImage src={src} alt="gallery image" objectFit="cover" w="100%" h="100%" />
+      <ChakraNextImage src={src} alt="mosaic gallery image" objectFit="cover" w="100%" h="100%" />
     </MotionImg>
   );
 };

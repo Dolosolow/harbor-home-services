@@ -17,6 +17,7 @@ export const Poster = ({ btnText = "Submit", withButton = true, ...props }: PPro
   return (
     <Flex {...restProps}>
       <ImageBackground
+        alt="poster room painter"
         src={props.imgsrc}
         containerProps={{
           w: ["95%", null, null, "85%"],
@@ -30,7 +31,7 @@ export const Poster = ({ btnText = "Submit", withButton = true, ...props }: PPro
           h="100%"
           align="flex-start"
           justify="center"
-          p={[4, null, 14]}
+          p={[6, null, 14]}
           spacing={[6, null, 8, null]}
         >
           <Text
