@@ -10,6 +10,8 @@ import { CheckboxContainer } from "./forms/CheckboxContainer";
 import { DetailTextarea } from "./forms/DetailTextarea";
 import { FileDropZone } from "./forms/FileDropZone";
 
+import { useShallowQuery } from "@/hooks/useShallowQuery";
+
 import { inquirySchema as validationSchema } from "@/utils/validation-schemas";
 import type { FormValues } from "../../../global";
 
@@ -20,10 +22,17 @@ export interface CFCProps {
 
 const ContactFormContainer = (props: FormikProps<FormValues> & CFCProps) => {
   const { values, touched, errors } = props;
+  const query = useShallowQuery("/contact");
 
   const preventKeySubmit = (e: React.KeyboardEvent<HTMLFormElement>) => {
     if (e.code === "Enter") e.preventDefault();
   };
+
+  useEffect(() => {
+    if (query.email) {
+      props.setFieldValue("email", query.email);
+    }
+  }, []);
 
   useEffect(() => {
     if (props.status !== undefined) {

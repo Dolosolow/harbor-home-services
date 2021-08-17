@@ -19,7 +19,8 @@ const FormContainer = (props: EFProps & FormikProps<FormValues>) => {
   return (
     <form onSubmit={handleSubmit}>
       <Stack
-        mt={[8, null, 14]}
+        // mt={[8, null, 14]}
+        pt={5}
         direction={["column", null, "row", "row", "row"]}
         spacing={[8, null, 2, 2, 2]}
         position="relative"
@@ -56,7 +57,6 @@ export const EmailForm = withFormik<EFProps, FormValues>({
     return { email: "" };
   },
   handleSubmit: (values, { resetForm }) => {
-    console.log(`poster-email`, values);
     resetForm();
     Router.push({ pathname: "/contact", query: { email: values.email } });
   },
