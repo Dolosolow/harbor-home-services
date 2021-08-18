@@ -64,10 +64,6 @@ export const GlobalStyles = css`
   }
 
   .container.container-contact {
-    flex-direction: row;
-
-    @media only screen and (max-width: ${breakpoints.lg}) {
-      flex-direction: column;
-    }
+    flex-direction: column;
   }
 `;
