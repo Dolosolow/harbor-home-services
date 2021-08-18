@@ -25,17 +25,27 @@ export const content: HomeContent = {
     },
   },
   directories: ["Home", "About Us", "Services", "Contact Us"],
+  comparison_section:
+    "We love to showcase our work. From minor fixes to complete overhauls, no matter the size, we are ready to complete any project in New York and New Jersey.",
+  services_section: `Harbor Home proudly has been serving North New Jersey and surrounding areas with one of the
+    best services in the area. People love working with us, we don't cut corners, we are
+    accurate, professional and do our job fast.`,
   header: {
     button: `Let's get started`,
     hText: `Quality work for residential properties`,
     sText: `In need of a new wardrobe, kitchen installation, an attic renovation, or any other handyman service? Look no further!`,
+    checkList: [
+      "Experienced Specialists",
+      "Insured, Liability Insurance",
+      "Done on time and on budget",
+    ],
   },
   cards: {
     first: {
       button: `Contact Us`,
       title: `Harbor Home Services`,
       hText: `Improving Your Home The Right Way`,
-      sText: `With over 3 years of experience in the carpentry trade, we provide workmanship for
+      sText: `With over 5 years of experience in the carpentry trade, we provide workmanship for
           residential property. We have built outstanding relationships with our customers, as
           we are always focused on providing exceptional service.`,
     },
@@ -43,7 +53,7 @@ export const content: HomeContent = {
       button: `Contact Us`,
       title: `Harbor Home Services`,
       hText: `Improving Your Home The Right Way`,
-      sText: `With over 3 years of experience in the carpentry trade, we provide workmanship for
+      sText: `With over 5 years of experience in the carpentry trade, we provide workmanship for
           residential property. We have built outstanding relationships with our customers, as
           we are always focused on providing exceptional service.`,
     },

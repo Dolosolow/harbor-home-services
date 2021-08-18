@@ -12,10 +12,13 @@ export type HomeContent = {
     };
   };
   directories: string[];
+  comparison_section: string;
+  services_section: string;
   header: {
     button: string;
     hText: string;
     sText: string;
+    checkList: string[];
   };
   cards: {
     first: {

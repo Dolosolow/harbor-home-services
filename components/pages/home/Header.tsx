@@ -4,6 +4,8 @@ import { Card } from "@/components/common/card";
 import { ChakraNextImage } from "@/components/common/chakra-next-image";
 import { CheckList } from "@/components/common/check-list";
 
+import { content } from "@/lang/en-home";
+
 type HeaderContent = {
   imgSrc: string;
   alt: string;
@@ -43,11 +45,7 @@ export const Header = ({
           flexDir="column"
           py={[4, null, 5, 5]}
           align="flex-start"
-          texts={[
-            "Experienced Specialists",
-            "Insured, Liability Insurance",
-            "Done on time and on budget",
-          ]}
+          texts={content.header.checkList}
         />
       </Flex>
       <Flex

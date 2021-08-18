@@ -3,9 +3,10 @@ import { Flex, Button } from "@chakra-ui/react";
 import { ReactCompareSlider, ReactCompareSliderImage } from "react-compare-slider";
 
 import { TextBlock } from "@/components/common/text-block";
-
 import type { HLProps } from "@/components/common/headline";
 import type { MTProps } from "@/components/common/mosaic";
+
+import { content } from "@/lang/en-home";
 
 const DynamicHeadline = dynamic<HLProps>(() =>
   import("../../common/headline").then((mod) => mod.Headline)
@@ -38,10 +39,7 @@ export const ImageComparison = () => (
     w="100vw"
   >
     <DynamicHeadline caption="Harbor Home Services" title="Projects" />
-    <TextBlock
-      text="We love to showcase our work. We are ready to complete any project in New York and New Jersey.
-      We love to keep your home cozy."
-    />
+    <TextBlock text={content.comparison_section} />
     <Flex h="100%" w={["100%", "100%", "80%"]} justify="center">
       <ReactCompareSlider
         style={{ width: "100%" }}
