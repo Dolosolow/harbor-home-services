@@ -43,7 +43,11 @@ export const Poster = ({ btnText = "Submit", withButton = true, ...props }: PPro
           >
             {props.headText}
           </Text>
-          <Text fontSize={[14, null, 15]} color="pGray" w={"380px"}>
+          <Text
+            fontSize={[13, null, 15]}
+            color="pGray"
+            w={["100%", null, "375px", "375px", "375px"]}
+          >
             {props.subText}
           </Text>
           <EmailForm btnText="submit" />
