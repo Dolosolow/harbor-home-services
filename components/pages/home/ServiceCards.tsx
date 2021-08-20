@@ -5,6 +5,8 @@ import { CardList } from "@/components/pages/home/CardList";
 import { Headline } from "@/components/common/headline";
 import { TextBlock } from "@/components/common/text-block";
 
+import { content as langContent } from "@/lang/en-home";
+
 export const ServiceCards = ({ content }: { content: Array<{ title: string }> }) => {
   return (
     <Flex
@@ -19,11 +21,7 @@ export const ServiceCards = ({ content }: { content: Array<{ title: string }> })
       backgroundColor="#0da2f50a"
     >
       <Headline caption="Harbor Home Services" title="Services" />
-      <TextBlock
-        text="Harbor Home proudly has been serving North New Jersey and surrounding areas with one of the
-      best services in the area. People love working with us, we don't cut corners, we are
-      accurate, professional and do our job fast."
-      />
+      <TextBlock text={langContent.services_section} />
 
       <CardList data={content} />
       <Link href="/services">

@@ -7,10 +7,7 @@ export const content: ServicesContent = {
     title: "Home Services",
     caption: `Behind every successful business, there is a group of talented people, committed to success.`,
   },
-  description: `Here at Harbor Home Services, since opening in 2018 our primary goal in all business
-  decisions is to achieve a high level of customer satisfaction with all that we provide.
-  Which has fueled our growth and will continue to do so for years down the road. Browse our
-  site to discover what we're all about.`,
+  description: `We are a full-service home improvement contractor.  We offer plumbing, electrical, carpentry, tile, flooring, painting, drywall and small repairs – on time – and budget.   In addition we do furniture assembly, TV installation, closet and shelving and just about anything in and around your home.`,
   cards: [
     {
       title: "Assemble Furniture",

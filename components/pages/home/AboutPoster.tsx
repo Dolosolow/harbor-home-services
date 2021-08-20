@@ -60,7 +60,7 @@ export const AboutPoster = ({ content }: APProps) => {
       }
       leftSideStyles={{
         justifyContent: "flex-start",
-        pl: [0, null, null, 6, 24],
+        pl: [4, null, null, 6, 24],
         pt: [0, null, null, 24],
         w: "100%",
         zIndex: 1,
