@@ -23,6 +23,7 @@ export const ContactLocation = () => {
       position="relative"
       onMouseEnter={onHoverEnter}
       onMouseLeave={onHoverExit}
+      overflow="hidden"
     >
       <Flex
         bgColor="#121212b2"
@@ -48,7 +49,7 @@ export const ContactLocation = () => {
         priority
         alt="custom street map"
         src="https://res.cloudinary.com/dnrj5jpxf/image/upload/v1641681152/hhs-images/loc_yeshte.png"
-        h="100%"
+        h={["150%", null, null, "100%"]}
         w="100%"
         objectFit="cover"
       />
