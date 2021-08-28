@@ -34,7 +34,7 @@ const Contact = () => {
       <Flex
         w="100%"
         flex={["auto", null, null, 1]}
-        h={["200px", null, "300px", "1250px"]}
+        h={["150px", null, "200px", "1250px"]}
         order={[1, null, null, 2]}
       >
         <DynamicLocation />
