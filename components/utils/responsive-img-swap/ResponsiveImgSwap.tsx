@@ -21,12 +21,12 @@ export interface RISProps {
 export const ResponsiveImgSwap = ({ mobile, mainImgSrc, carouselImgs }: RISProps) => (
   <>
     {mobile ? (
-      <Flex position="absolute" top={[0, null, null, null, 20]} right={0}>
+      <Flex position="absolute" top={[0, null, null, 20, 10]} right={[null, null, null, -130, -20]}>
         <ChakraNextImage
-          src={mainImgSrc}
           alt="main image"
-          height={768}
-          width={[1100, null, null, null, 1366]}
+          src={mainImgSrc}
+          height={[null, null, null, 500, 600]}
+          width={800}
         />
       </Flex>
     ) : (
