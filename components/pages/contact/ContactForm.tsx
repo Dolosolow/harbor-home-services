@@ -55,7 +55,7 @@ const ContactFormContainer = (props: FormikProps<FormValues> & CFCProps) => {
       h="100%"
       p={[0, null, 6]}
       pb={[0, null, 10]}
-      border={[0, null, "2px solid #e6e6e6a2"]}
+      border={[0, null, null, null, "2px solid #e6e6e6a2"]}
     >
       <Header />
       <form onSubmit={props.handleSubmit} onKeyDown={preventKeySubmit}>
