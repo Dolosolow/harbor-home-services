@@ -19,7 +19,6 @@ const FormContainer = (props: EFProps & FormikProps<FormValues>) => {
   return (
     <form onSubmit={handleSubmit}>
       <Stack
-        // mt={[8, null, 14]}
         pt={5}
         direction={["column", null, "row", "row", "row"]}
         spacing={[8, null, 2, 2, 2]}
@@ -28,7 +27,7 @@ const FormContainer = (props: EFProps & FormikProps<FormValues>) => {
       >
         <FormControl isInvalid={!isValid} w={["300px"]}>
           {errors.email && (
-            <Text pos="absolute" top={-6} color="whiteAlpha.500" fontSize={14}>
+            <Text pos="absolute" top={-6} color="red.500" fontSize={14}>
               {errors.email}
             </Text>
           )}
@@ -42,6 +41,7 @@ const FormContainer = (props: EFProps & FormikProps<FormValues>) => {
             onBlur={handleBlur}
             onChange={handleChange}
             _focusVisible={{ color: "#fafafa" }}
+            _focus={{ borderColor: "pAqua", color: "#fafafa", backgroundColor: "transparent" }}
           />
         </FormControl>
         <Button type="submit" color="white" variant="primary" px={8} w="135px">
