@@ -57,6 +57,7 @@ export const GlobalStyles = css`
   .container.container-services {
     align-items: center;
     padding-top: 144px;
+    max-width: 144rem;
 
     @media only screen and (max-width: ${breakpoints.lg}) {
       padding-top: 96px;

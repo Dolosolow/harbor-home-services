@@ -70,6 +70,9 @@ export const AboutPoster = ({ content }: APProps) => {
         mt: [null, null, 0],
         h: "100%",
         py: [16, null, 20, 14],
+        maxW: "1440px",
+        margin: "auto",
+        overflow: "hidden",
       }}
     />
   );

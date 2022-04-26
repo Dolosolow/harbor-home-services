@@ -25,47 +25,54 @@ const images = [
 
 export const ImageComparison = () => (
   <Flex
-    align="center"
-    direction="column"
-    justify="flex-start"
-    shrink={0}
     bgColor="#0da2f50a"
     bgPos="center"
     bgRepeat="repeat"
     bgSize="contain"
-    position="relative"
     pb={10}
     h="100%"
     w="100vw"
   >
-    <DynamicHeadline caption="Harbor Home Services" title="Projects" />
-    <TextBlock text={content.comparison_section} />
-    <Flex h="100%" w={["100%", "100%", "80%"]} justify="center">
-      <ReactCompareSlider
-        style={{ width: "100%" }}
-        onlyHandleDraggable
-        position={75}
-        itemOne={
-          <ReactCompareSliderImage
-            style={{ objectFit: "cover" }}
-            src="https://res.cloudinary.com/dnrj5jpxf/image/upload/v1633501520/hhs-images/before-r_pymsx5.webp"
-            srcSet="https://res.cloudinary.com/dnrj5jpxf/image/upload/v1633501520/hhs-images/before-r_pymsx5.webp"
-            alt="before renovation"
-          />
-        }
-        itemTwo={
-          <ReactCompareSliderImage
-            style={{ objectFit: "cover" }}
-            src="https://res.cloudinary.com/dnrj5jpxf/image/upload/v1633501502/hhs-images/after-r_wddydv.webp"
-            srcSet="https://res.cloudinary.com/dnrj5jpxf/image/upload/v1633501502/hhs-images/after-r_wddydv.webp"
-            alt="after renovation"
-          />
-        }
-      />
+    <Flex
+      align="center"
+      margin="auto"
+      direction="column"
+      justify="flex-start"
+      shrink={0}
+      position="relative"
+      h="100%"
+      w="100%"
+      maxW="1440px"
+    >
+      <DynamicHeadline caption="Harbor Home Services" title="Projects" />
+      <TextBlock text={content.comparison_section} />
+      <Flex h="100%" w={["100%", "100%", "80%"]} justify="center">
+        <ReactCompareSlider
+          style={{ width: "100%" }}
+          onlyHandleDraggable
+          position={75}
+          itemOne={
+            <ReactCompareSliderImage
+              style={{ objectFit: "cover" }}
+              src="https://res.cloudinary.com/dnrj5jpxf/image/upload/v1633501520/hhs-images/before-r_pymsx5.webp"
+              srcSet="https://res.cloudinary.com/dnrj5jpxf/image/upload/v1633501520/hhs-images/before-r_pymsx5.webp"
+              alt="before renovation"
+            />
+          }
+          itemTwo={
+            <ReactCompareSliderImage
+              style={{ objectFit: "cover" }}
+              src="https://res.cloudinary.com/dnrj5jpxf/image/upload/v1633501502/hhs-images/after-r_wddydv.webp"
+              srcSet="https://res.cloudinary.com/dnrj5jpxf/image/upload/v1633501502/hhs-images/after-r_wddydv.webp"
+              alt="after renovation"
+            />
+          }
+        />
+      </Flex>
+      <Button color="white" size="md" variant="primary" my={20}>
+        View more Projects
+      </Button>
+      <DynamicMosaicTiles images={images} gridContainerStyles={{ mb: [10] }} />
     </Flex>
-    <Button color="white" size="md" variant="primary" my={20}>
-      View more Projects
-    </Button>
-    <DynamicMosaicTiles images={images} gridContainerStyles={{ mb: [10] }} />
   </Flex>
 );

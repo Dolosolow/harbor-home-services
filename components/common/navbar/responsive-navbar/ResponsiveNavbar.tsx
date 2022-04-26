@@ -19,22 +19,24 @@ const Navbar = ({ checkpointReached, directories, inverseTheme, hideLogo, alert 
       backdropFilter={checkpointReached ? "blur(10px)" : undefined}
       {...navbarStyles}
     >
-      {!hideLogo && (
-        <NextLink href="/">
-          <a aria-label="Home">
-            <LogoIcon
-              position="absolute"
-              left={5}
-              top={checkpointReached ? -3.5 : -6}
-              boxSize={checkpointReached ? "90px" : "160px"}
-              color={inverseTheme ? "#121212" : "whiteAlpha.900"}
-            />
-          </a>
-        </NextLink>
-      )}
-      <HStack spacing={12} display={["flex", "none", "flex"]}>
-        {getSiteLinks(directories)}
-      </HStack>
+      <Flex w="100%" maxW="1440px" margin="auto" position="relative">
+        {!hideLogo && (
+          <NextLink href="/">
+            <a aria-label="Home">
+              <LogoIcon
+                position="absolute"
+                left={5}
+                top={checkpointReached ? -45 : -6}
+                boxSize={checkpointReached ? "90px" : "160px"}
+                color={inverseTheme ? "#121212" : "whiteAlpha.900"}
+              />
+            </a>
+          </NextLink>
+        )}
+        <HStack spacing={12} display={["flex", "none", "flex"]} marginLeft="auto">
+          {getSiteLinks(directories)}
+        </HStack>
+      </Flex>
     </Flex>
   );
 };
