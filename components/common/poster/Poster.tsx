@@ -24,7 +24,7 @@ export const Poster = ({ btnText = "Submit", withButton = true, ...props }: PPro
           h: "350px",
           borderRadius: 15,
           overflow: "hidden",
-          maxW: "1440px",
+          maxWidth: "1440px",
         }}
       >
         <VStack
